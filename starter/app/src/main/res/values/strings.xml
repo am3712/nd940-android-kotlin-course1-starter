@@ -1,3 +1,29 @@
 <resources>
     <string name="app_name">ShoeStore</string>
+    <string name="e_mail">e-mail</string>
+    <string name="password">password</string>
+    <string name="login">Login</string>
+    <string name="does_not_have_an_account_create">Don\'t have an account?\tCreate</string>
+    <string name="welcome_onboarding">Welcome onboarding</string>
+    <string name="instructions_onboarding">Instructions onboarding</string>
+    <string name="home">Home</string>
+    <string name="shoe_detail">Shoe Detail</string>
+    <string name="shoe_listing">Shoe Listing</string>
+    <string name="welcome">Welcome!</string>
+    <string name="join_with_us_enjoy_shoe_store"><![CDATA[Join with us & enjoy shoe store]]></string>
+    <string name="next">Next</string>
+    <string name="u2022_creating_a_listing">• Creating a listing</string>
+    <string name="u2022_be_smart_with_storage">• Be smart with storage</string>
+    <string name="get_started">Get started</string>
+    <string name="add_new_shoe">Add new Shoe</string>
+    <string name="shoe_name">Shoe Name</string>
+    <string name="company">Company</string>
+    <string name="shoe_size">Shoe Size</string>
+    <string name="description">Description</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="logout">Logout</string>
+    <string name="shoe_name_error_msg">Shoe Name can\'t be empty!!</string>
+    <string name="shoe_added_successfully_msg">Shoe added successfully!</string>
+    <string name="empty">Empty!</string>
 </resources>
