@@ -19,7 +19,7 @@ class InstructionsOnboardingFragment : Fragment() {
             FragmentInstructionsOnboardingBinding.inflate(layoutInflater, container, false)
         binding.getStartedBt.setOnClickListener {
             findNavController().navigate(
-                InstructionsOnboardingFragmentDirections.actionInstructionsOnboardingFragmentToLoginFragment()
+                InstructionsOnboardingFragmentDirections.actionInstructionsOnboardingFragmentToShoeListingFragment()
             )
         }
         return binding.root

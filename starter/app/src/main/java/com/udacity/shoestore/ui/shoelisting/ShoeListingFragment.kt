@@ -48,11 +48,7 @@ class ShoeListingFragment : Fragment() {
                 //  or
                 // val shoeItemBinding = DataBindingUtil.inflate(layoutInflater, R.layout.shoe_list_item, listLL, false)
                 val shoeItemBinding = ShoeListItemBinding.inflate(layoutInflater, listLL, false)
-                shoeItemBinding.shoeItemName.text = shoe.name
-                /*shoeItemBinding.root.layoutParams = LinearLayout.LayoutParams(
-                    LinearLayout.LayoutParams.MATCH_PARENT,
-                    LinearLayout.LayoutParams.WRAP_CONTENT
-                )*/
+                shoeItemBinding.shoe = shoe
                 listLL.addView(shoeItemBinding.root)
             }
         })

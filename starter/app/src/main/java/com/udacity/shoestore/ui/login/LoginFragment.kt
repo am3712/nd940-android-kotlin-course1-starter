@@ -39,7 +39,7 @@ class LoginFragment : Fragment() {
         createNewAccountText.setSpan(
             object : ClickableSpan() {
                 override fun onClick(p0: View) {
-                    findNavController().navigate(LoginFragmentDirections.actionLoginFragmentToShoeListingFragment())
+                    findNavController().navigate(LoginFragmentDirections.actionLoginFragmentToWelcomeOnboardingFragment())
                 }
 
             },
@@ -52,7 +52,7 @@ class LoginFragment : Fragment() {
         createNewAccount.text = createNewAccountText
 
         loginBt.setOnClickListener {
-            findNavController().navigate(LoginFragmentDirections.actionLoginFragmentToShoeListingFragment())
+            findNavController().navigate(LoginFragmentDirections.actionLoginFragmentToWelcomeOnboardingFragment())
         }
 
     }
