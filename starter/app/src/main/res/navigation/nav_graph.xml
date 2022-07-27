@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/welcomeOnboardingFragment">
+    app:startDestination="@id/loginFragment">
 
     <fragment
         android:id="@+id/loginFragment"
@@ -11,8 +11,10 @@
         android:label="@string/login"
         tools:layout="@layout/fragment_login">
         <action
-            android:id="@+id/action_loginFragment_to_shoeListingFragment"
-            app:destination="@id/shoeListingFragment"
+            android:id="@+id/action_loginFragment_to_welcomeOnboardingFragment"
+            app:destination="@id/welcomeOnboardingFragment"
+            app:enterAnim="@anim/fragment_open_enter"
+            app:exitAnim="@anim/fragment_open_exit"
             app:popUpTo="@id/loginFragment"
             app:popUpToInclusive="true" />
     </fragment>
@@ -25,6 +27,8 @@
         <action
             android:id="@+id/action_welcomeOnboardingFragment_to_instructionsOnboardingFragment"
             app:destination="@id/instructionsOnboardingFragment"
+            app:enterAnim="@anim/fragment_open_enter"
+            app:exitAnim="@anim/fragment_open_exit"
             app:popUpTo="@id/welcomeOnboardingFragment"
             app:popUpToInclusive="true" />
     </fragment>
@@ -35,8 +39,10 @@
         android:label="@string/instructions_onboarding"
         tools:layout="@layout/fragment_instructions_onboarding">
         <action
-            android:id="@+id/action_instructionsOnboardingFragment_to_loginFragment"
-            app:destination="@id/loginFragment"
+            android:id="@+id/action_instructionsOnboardingFragment_to_shoeListingFragment"
+            app:destination="@id/shoeListingFragment"
+            app:enterAnim="@anim/fragment_open_enter"
+            app:exitAnim="@anim/fragment_open_exit"
             app:popUpTo="@id/instructionsOnboardingFragment"
             app:popUpToInclusive="true" />
     </fragment>
@@ -48,7 +54,11 @@
         tools:layout="@layout/fragment_shoe_listing">
         <action
             android:id="@+id/action_shoeListingFragment_to_shoeDetailFragment"
-            app:destination="@id/shoeDetailFragment" />
+            app:destination="@id/shoeDetailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
         <argument
             android:name="ShowAppBar"
             android:defaultValue="true" />

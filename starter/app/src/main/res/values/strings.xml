@@ -23,7 +23,8 @@
     <string name="cancel">Cancel</string>
     <string name="save">Save</string>
     <string name="logout">Logout</string>
-    <string name="shoe_name_error_msg">Shoe Name can\'t be empty!!</string>
+    <string name="shoe_error_msg">Some shoe inputs are invalid!!</string>
     <string name="shoe_added_successfully_msg">Shoe added successfully!</string>
     <string name="empty">Empty!</string>
+    <string name="invalid">Invalid!</string>
 </resources>
