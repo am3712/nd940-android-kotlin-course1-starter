@@ -23,15 +23,16 @@ class ShoeDetailFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         val binding = FragmentShoeDetailBinding.inflate(layoutInflater, container, false)
-        binding.cancelBt.setOnClickListener { findNavController().navigateUp() }
-        binding.shoe = Shoe.newInstance()
-        binding.lifecycleOwner = viewLifecycleOwner
-        binding.saveBt.setOnClickListener {
-            viewModel.addShoe(binding.shoe!!)
-            showMessage(R.string.shoe_added_successfully_msg)
-            findNavController().navigateUp()
+        with(binding) {
+            cancelBt.setOnClickListener { findNavController().navigateUp() }
+            shoe = Shoe.newInstance()
+            lifecycleOwner = viewLifecycleOwner
+            saveBt.setOnClickListener {
+                viewModel.addShoe(shoe!!)
+                showMessage(R.string.shoe_added_successfully_msg)
+                findNavController().navigateUp()
+            }
         }
-
         return binding.root
     }
 
