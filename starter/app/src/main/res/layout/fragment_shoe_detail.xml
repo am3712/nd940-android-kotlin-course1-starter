@@ -9,7 +9,7 @@
             name="shoe"
             type="com.udacity.shoestore.models.Shoe" />
     </data>
-
+<!--    ConstraintLayout is more efficient than nested LinearLayouts for more complex UIs-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
